@@ -563,12 +563,72 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.z-\[-1\] {
+  z-index: -1;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.flex {
+  display: flex;
+}
+
 .h-screen {
   height: 100vh;
 }
 
 .w-full {
   width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .bg-base {
@@ -581,7 +641,103 @@ video {
   background-color: rgba(var(--ctp-blue), var(--tw-bg-opacity));
 }
 
+.fill-peach {
+  fill: rgb(var(--ctp-peach));
+}
+
+.fill-mantle {
+  fill: rgb(var(--ctp-mantle));
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
 .text-text {
+  --tw-text-opacity: 1;
+  color: rgba(var(--ctp-text), var(--tw-text-opacity));
+}
+
+.text-overlay0 {
+  --tw-text-opacity: 1;
+  color: rgba(var(--ctp-overlay0), var(--tw-text-opacity));
+}
+
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgba(var(--ctp-blue), var(--tw-text-opacity));
+}
+
+.text-peach {
+  --tw-text-opacity: 1;
+  color: rgba(var(--ctp-peach), var(--tw-text-opacity));
+}
+
+.hover\:text-peach:hover {
+  --tw-text-opacity: 1;
+  color: rgba(var(--ctp-peach), var(--tw-text-opacity));
+}
+
+.hover\:text-blue:hover {
+  --tw-text-opacity: 1;
+  color: rgba(var(--ctp-blue), var(--tw-text-opacity));
+}
+
+.hover\:text-text:hover {
   --tw-text-opacity: 1;
   color: rgba(var(--ctp-text), var(--tw-text-opacity));
 }

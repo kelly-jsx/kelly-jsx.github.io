@@ -10,31 +10,58 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="mocha bg-base text-text">
-    <section id="hero" class="w-full h-screen">
-      <button>
-        <i class="fa-solid fa-moon"></i>
-      </button>
+  <body class="mocha bg-base text-text font-sans">
+    <section
+      id="hero"
+      class="w-full h-screen flex flex-col justify-between p-4"
+    >
+      <div class="flex justify-end">
+        <button class="text-overlay0 hover:text-text">
+          <i class="fa-solid fa-moon text-4xl"></i>
+        </button>
+      </div>
 
-      <div>
-        <h1>Hi, I'm Kelly 👋</h1>
-        <h2>front-end developer</h2>
-        <div>
-          <a href="https://github.com/kelly-jsx">
+      <div class="flex flex-col justify-center items-center gap-3">
+        <h1 class="font-extrabold text-6xl">
+          Hi, I'm
+          <span class="text-blue">Kelly</span>
+          👋
+        </h1>
+        <h2 class="font-mono text-4xl font-bold">
+          <span class="text-peach">front-end</span> developer
+        </h2>
+        <div class="text-5xl">
+          <a href="https://github.com/kelly-jsx" class="hover:text-peach">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/sebastian-b%C5%82och-165681264/">
+          <a
+            href="https://www.linkedin.com/in/sebastian-b%C5%82och-165681264/"
+            class="hover:text-peach"
+          >
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
       </div>
 
-      <div>
-        <li><a href="">About me</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+      <div class="text-4xl text-overlay0 m-0">
+        <li><a href="#aboutme" class="hover:text-blue">About me</a></li>
+        <li><a href="#skills" class="hover:text-blue">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue">Contact</a></li>
       </div>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="fill-mantle absolute bottom-0 left-0 w-full z-[-1]"
+      >
+        <path
+          fill-opacity="1"
+          d="M0,224L30,202.7C60,181,120,139,180,144C240,149,300,203,360,234.7C420,267,480,277,540,245.3C600,213,660,139,720,90.7C780,43,840,21,900,42.7C960,64,1020,128,1080,144C1140,160,1200,128,1260,138.7C1320,149,1380,203,1410,229.3L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+          style="--darkreader-inline-fill: #323639"
+          data-darkreader-inline-fill=""
+        ></path>
+      </svg>
     </section>
   </body>
 </html>
