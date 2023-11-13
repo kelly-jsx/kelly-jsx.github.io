@@ -11,15 +11,27 @@
     ></script>
   </head>
   <body class="font-sans mocha bg-base text-text">
-    <section id="nav-mobile" class="h-100vh w-100vh">
+    <section id="nav-mobile-container" class="h-100vh w-100vh lg:hidden">
       <div class="absolute top-4 right-4">
-        <button class="lg:hidden text-overlay0 hover:text-text">
+        <button
+          id="open-mobile"
+          class="text-overlay0 hover:text-text"
+          onclick="(openNavMenu())"
+        >
           <i class="text-4xl fa-solid fa-bars"></i>
+        </button>
+        <button
+          id="close-mobile"
+          class="hidden text-overlay0 hover:text-text"
+          onclick="(closeNavMenu())"
+        >
+          <i class="text-4xl fa-solid fa-xmark"></i>
         </button>
       </div>
 
       <nav
-        class="flex absolute flex-col justify-between p-4 m-0 w-3/4 h-full text-4xl text-overlay0 bg-crust/90"
+        id="nav-mobile"
+        class="hidden absolute flex-col justify-between p-4 m-0 w-3/4 h-full text-4xl text-overlay0 bg-crust/90"
       >
         <div class="flex flex-col gap-4 items-center">
           <h1 class="font-mono font-bold text-blue">Kelly-JSX</h1>
@@ -93,4 +105,19 @@
       </svg>
     </section>
   </body>
+  <script>
+    function openNavMenu() {
+      document.getElementById('nav-mobile').classList.remove('hidden')
+      document.getElementById('nav-mobile').classList.add('flex')
+      document.getElementById('open-mobile').classList.add('hidden')
+      document.getElementById('close-mobile').classList.remove('hidden')
+    }
+
+    function closeNavMenu() {
+      document.getElementById('nav-mobile').classList.add('hidden')
+      document.getElementById('nav-mobile').classList.remove('flex')
+      document.getElementById('open-mobile').classList.remove('hidden')
+      document.getElementById('close-mobile').classList.add('hidden')
+    }
+  </script>
 </html>
