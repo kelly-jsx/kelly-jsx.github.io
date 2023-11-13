@@ -10,24 +10,32 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="mocha bg-base text-text font-sans">
+  <body class="font-sans mocha bg-base text-text">
     <section
       id="hero"
-      class="w-full h-screen flex flex-col justify-between p-4"
+      class="flex flex-col p-4 w-full h-screen lg:justify-between"
     >
       <div class="flex justify-end">
-        <button class="text-overlay0 hover:text-text">
-          <i class="fa-solid fa-moon text-4xl"></i>
+        <button class="hidden lg:block text-overlay0 hover:text-text">
+          <i class="text-4xl fa-solid fa-moon"></i>
+        </button>
+        <button class="lg:hidden text-overlay0 hover:text-text">
+          <i class="text-4xl fa-solid fa-bars"></i>
+        </button>
+        <button class="hidden text-overlay0 hover:text-text">
+          <i class="text-4xl fa-solid fa-moon"></i>
         </button>
       </div>
 
-      <div class="flex flex-col justify-center items-center gap-3">
-        <h1 class="font-extrabold text-6xl">
+      <div
+        class="flex flex-col gap-3 justify-center items-center self-center my-auto"
+      >
+        <h1 class="text-4xl font-extrabold lg:text-6xl">
           Hi, I'm
           <span class="text-blue">Kelly</span>
           👋
         </h1>
-        <h2 class="font-mono text-4xl font-bold">
+        <h2 class="font-mono text-2xl font-bold lg:text-4xl">
           <span class="text-peach">front-end</span> developer
         </h2>
         <div class="text-5xl">
@@ -43,12 +51,14 @@
         </div>
       </div>
 
-      <div class="text-4xl text-overlay0 m-0">
-        <li><a href="#aboutme" class="hover:text-blue">About me</a></li>
-        <li><a href="#skills" class="hover:text-blue">Skills</a></li>
-        <li><a href="#projects" class="hover:text-blue">Projects</a></li>
-        <li><a href="#contact" class="hover:text-blue">Contact</a></li>
-      </div>
+      <nav class="hidden m-0 text-4xl text-overlay0 lg:block">
+        <ul class="list-none">
+          <li><a href="#aboutme" class="hover:text-blue">About me</a></li>
+          <li><a href="#skills" class="hover:text-blue">Skills</a></li>
+          <li><a href="#projects" class="hover:text-blue">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue">Contact</a></li>
+        </ul>
+      </nav>
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
