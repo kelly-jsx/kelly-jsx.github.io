@@ -13,18 +13,10 @@
   <body class="font-sans mocha bg-base text-text">
     <section id="nav-mobile-container" class="h-100vh w-100vh lg:hidden">
       <div class="absolute top-4 right-4">
-        <button
-          id="open-mobile"
-          class="text-overlay0 hover:text-text"
-          onclick="(openNavMenu())"
-        >
+        <button id="open-mobile" class="text-overlay0 hover:text-text">
           <i class="text-4xl fa-solid fa-bars"></i>
         </button>
-        <button
-          id="close-mobile"
-          class="hidden text-overlay0 hover:text-text"
-          onclick="(closeNavMenu())"
-        >
+        <button id="close-mobile" class="hidden text-overlay0 hover:text-text">
           <i class="text-4xl fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -106,18 +98,25 @@
     </section>
   </body>
   <script>
+    const navMobile = document.getElementById('nav-mobile')
+    const openMobile = document.getElementById('open-mobile')
+    const closeMobile = document.getElementById('close-mobile')
+
     function openNavMenu() {
-      document.getElementById('nav-mobile').classList.remove('hidden')
-      document.getElementById('nav-mobile').classList.add('flex')
-      document.getElementById('open-mobile').classList.add('hidden')
-      document.getElementById('close-mobile').classList.remove('hidden')
+      navMobile.classList.remove('hidden')
+      navMobile.classList.add('flex')
+      openMobile.classList.add('hidden')
+      closeMobile.classList.remove('hidden')
     }
 
     function closeNavMenu() {
-      document.getElementById('nav-mobile').classList.add('hidden')
-      document.getElementById('nav-mobile').classList.remove('flex')
-      document.getElementById('open-mobile').classList.remove('hidden')
-      document.getElementById('close-mobile').classList.add('hidden')
+      navMobile.classList.add('hidden')
+      navMobile.classList.remove('flex')
+      openMobile.classList.remove('hidden')
+      closeMobile.classList.add('hidden')
     }
+
+    openMobile.addEventListener('click', openNavMenu)
+    closeMobile.addEventListener('click', closeNavMenu)
   </script>
 </html>
