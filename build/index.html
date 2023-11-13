@@ -11,18 +11,37 @@
     ></script>
   </head>
   <body class="font-sans mocha bg-base text-text">
+    <section id="nav-mobile" class="h-100vh w-100vh">
+      <div class="absolute top-4 right-4">
+        <button class="lg:hidden text-overlay0 hover:text-text">
+          <i class="text-4xl fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <nav
+        class="flex absolute flex-col justify-between p-4 m-0 w-3/4 h-full text-4xl text-overlay0 bg-crust/90"
+      >
+        <div class="flex flex-col gap-4 items-center">
+          <h1 class="font-mono font-bold text-blue">Kelly-JSX</h1>
+          <button class="text-overlay0 hover:text-text">
+            <i class="text-4xl fa-solid fa-moon"></i>
+          </button>
+        </div>
+        <ul class="list-none">
+          <li><a href="#aboutme" class="hover:text-blue">About me</a></li>
+          <li><a href="#skills" class="hover:text-blue">Skills</a></li>
+          <li><a href="#projects" class="hover:text-blue">Projects</a></li>
+          <li><a href="#contact" class="hover:text-blue">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+
     <section
       id="hero"
       class="flex flex-col p-4 w-full h-screen lg:justify-between"
     >
-      <div class="flex justify-end">
-        <button class="hidden lg:block text-overlay0 hover:text-text">
-          <i class="text-4xl fa-solid fa-moon"></i>
-        </button>
-        <button class="lg:hidden text-overlay0 hover:text-text">
-          <i class="text-4xl fa-solid fa-bars"></i>
-        </button>
-        <button class="hidden text-overlay0 hover:text-text">
+      <div class="hidden justify-end lg:flex">
+        <button class="text-overlay0 hover:text-text">
           <i class="text-4xl fa-solid fa-moon"></i>
         </button>
       </div>
