@@ -108,6 +108,40 @@
         ></path>
       </svg>
     </section>
+
+    <header
+      id="header-desktop"
+      class="hidden justify-between items-center p-4 text-3xl lg:flex bg-mantle"
+    >
+      <h1 class="font-mono font-bold text-blue">kelly-jsx</h1>
+      <nav class="flex gap-4">
+        <a href="#aboutme" class="hover:text-blue">About me</a>
+        <a href="#skills" class="hover:text-blue">Skills</a>
+        <a href="#projects" class="hover:text-blue">Projects</a>
+        <a href="#contact" class="hover:text-blue">Contact</a>
+      </nav>
+      <div class="flex gap-6 items-center text-4xl text-subtext0">
+        <div class="">
+          <a href="https://github.com/kelly-jsx" class="hover:text-peach">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sebastian-b%C5%82och-165681264/"
+            class="hover:text-peach"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+        <div>
+          <button id="dark-icon-3" class="hover:text-text">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button id="light-icon-3" class="hidden hover:text-text">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </header>
   </body>
   <script>
     const navMobile = document.getElementById('nav-mobile')
@@ -115,8 +149,10 @@
     const closeMobile = document.getElementById('close-mobile')
     const darkIcon = document.getElementById('dark-icon')
     const darkIcon2 = document.getElementById('dark-icon-2')
+    const darkIcon3 = document.getElementById('dark-icon-3')
     const lightIcon = document.getElementById('light-icon')
     const lightIcon2 = document.getElementById('light-icon-2')
+    const lightIcon3 = document.getElementById('light-icon-3')
     const bodyElement = document.body
 
     function openNavMenu() {
@@ -140,6 +176,8 @@
       lightIcon.classList.remove('hidden')
       darkIcon2.classList.add('hidden')
       lightIcon2.classList.remove('hidden')
+      darkIcon3.classList.add('hidden')
+      lightIcon3.classList.remove('hidden')
       console.log('dark-mode')
     }
 
@@ -150,6 +188,8 @@
       lightIcon.classList.add('hidden')
       darkIcon2.classList.remove('hidden')
       lightIcon2.classList.add('hidden')
+      darkIcon3.classList.remove('hidden')
+      lightIcon3.classList.add('hidden')
       console.log('test')
     }
 
@@ -157,7 +197,9 @@
     closeMobile.addEventListener('click', closeNavMenu)
     darkIcon.addEventListener('click', toggleDarkMode)
     darkIcon2.addEventListener('click', toggleDarkMode)
+    darkIcon3.addEventListener('click', toggleDarkMode)
     lightIcon.addEventListener('click', toggleLightMode)
     lightIcon2.addEventListener('click', toggleLightMode)
+    lightIcon3.addEventListener('click', toggleLightMode)
   </script>
 </html>
