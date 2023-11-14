@@ -27,8 +27,17 @@
       >
         <div class="flex flex-col gap-4 items-center">
           <h1 class="font-mono font-bold text-blue">Kelly-JSX</h1>
-          <button class="text-overlay0 hover:text-text">
+          <button
+            id="dark-icon-2"
+            class="dark-icon text-overlay0 hover:text-text"
+          >
             <i class="text-4xl fa-solid fa-moon"></i>
+          </button>
+          <button
+            id="light-icon-2"
+            class="hidden light-icon text-overlay0 hover:text-text"
+          >
+            <i class="text-4xl fa-solid fa-sun"></i>
           </button>
         </div>
         <ul class="list-none">
@@ -45,8 +54,11 @@
       class="flex flex-col p-4 w-full h-screen lg:justify-between"
     >
       <div class="hidden justify-end lg:flex">
-        <button class="text-overlay0 hover:text-text">
+        <button id="dark-icon" class="dark-icon text-overlay0 hover:text-text">
           <i class="text-4xl fa-solid fa-moon"></i>
+        </button>
+        <button id="light-icon" class="hidden text-overlay0 hover:text-text">
+          <i class="text-4xl fa-solid fa-sun"></i>
         </button>
       </div>
 
@@ -101,6 +113,11 @@
     const navMobile = document.getElementById('nav-mobile')
     const openMobile = document.getElementById('open-mobile')
     const closeMobile = document.getElementById('close-mobile')
+    const darkIcon = document.getElementById('dark-icon')
+    const darkIcon2 = document.getElementById('dark-icon-2')
+    const lightIcon = document.getElementById('light-icon')
+    const lightIcon2 = document.getElementById('light-icon-2')
+    const bodyElement = document.body
 
     function openNavMenu() {
       navMobile.classList.remove('hidden')
@@ -116,7 +133,31 @@
       closeMobile.classList.add('hidden')
     }
 
+    function toggleDarkMode() {
+      bodyElement.classList.remove('mocha')
+      bodyElement.classList.add('latte')
+      darkIcon.classList.add('hidden')
+      lightIcon.classList.remove('hidden')
+      darkIcon2.classList.add('hidden')
+      lightIcon2.classList.remove('hidden')
+      console.log('dark-mode')
+    }
+
+    function toggleLightMode() {
+      bodyElement.classList.add('mocha')
+      bodyElement.classList.remove('latte')
+      darkIcon.classList.remove('hidden')
+      lightIcon.classList.add('hidden')
+      darkIcon2.classList.remove('hidden')
+      lightIcon2.classList.add('hidden')
+      console.log('test')
+    }
+
     openMobile.addEventListener('click', openNavMenu)
     closeMobile.addEventListener('click', closeNavMenu)
+    darkIcon.addEventListener('click', toggleDarkMode)
+    darkIcon2.addEventListener('click', toggleDarkMode)
+    lightIcon.addEventListener('click', toggleLightMode)
+    lightIcon2.addEventListener('click', toggleLightMode)
   </script>
 </html>
