@@ -110,17 +110,28 @@
     </section>
 
     <header
-      id="header-desktop"
-      class="hidden justify-between items-center p-4 text-3xl lg:flex bg-mantle"
+      id="header"
+      class="justify-between items-center p-4 text-3xl lg:flex bg-mantle"
     >
-      <h1 class="font-mono font-bold text-blue">kelly-jsx</h1>
-      <nav class="flex gap-4">
+      <div class="flex gap-0">
+        <button id="open-mobile" class="text-overlay0 hover:text-text">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <button id="close-mobile" class="hidden text-overlay0 hover:text-text">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <i class="fa-solid fa-bars"></i>
+        <div>
+          <h1 class="font-mono font-bold text-blue">kelly-jsx</h1>
+        </div>
+      </div>
+      <nav class="hidden gap-4 lg:flex">
         <a href="#aboutme" class="hover:text-blue">About me</a>
         <a href="#skills" class="hover:text-blue">Skills</a>
         <a href="#projects" class="hover:text-blue">Projects</a>
         <a href="#contact" class="hover:text-blue">Contact</a>
       </nav>
-      <div class="flex gap-6 items-center text-4xl text-subtext0">
+      <div class="hidden gap-6 items-center text-4xl lg:flex text-subtext0">
         <div class="">
           <a href="https://github.com/kelly-jsx" class="hover:text-peach">
             <i class="fa-brands fa-github"></i>
@@ -159,6 +170,71 @@
         accumsan arcu tellus eget nunc. Proin euismod dignissim orci sit amet
         porttitor. Vestibulum a neque sapien.
       </p>
+    </section>
+
+    <section
+      id="skills"
+      class="flex flex-col gap-4 justify-center items-center px-4 pt-10 pb-40 bg-mantle lg:px-40 lg:gap-8"
+    >
+      <div
+        class="flex flex-col items-center p-4 rounded-lg drop-shadow-lg bg-surface0"
+      >
+        <div id="tools" class="flex flex-col items-center lg:w-1/2">
+          <div>
+            <div
+              class="flex justify-center items-center p-4 rounded-full bg-blue"
+            >
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <h1 class="font-bold text-center">Tools</h1>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-xl text-center">
+            <a
+              href="https://git-scm.com/"
+              target="_blank"
+              class="px-3 py-1 rounded-lg drop-shadow-2xl bg-mantle hover:bg-blue"
+              ><i class="fa-brands fa-git-alt"></i> Git</a
+            >
+            <a
+              href="https://gihub.com/"
+              target="_blank"
+              class="px-3 py-1 rounded-lg drop-shadow-2xl bg-mantle hover:bg-blue"
+              ><i class="fa-brands fa-github"></i> Github</a
+            >
+            <a
+              href="https://www.zsh.org/"
+              target="_blank"
+              class="px-3 py-1 rounded-lg drop-shadow-2xl bg-mantle hover:bg-blue"
+              ><i class="text-md fa-solid fa-terminal"></i> <span>Zsh</span></a
+            >
+            <a
+              href="https://www.npmjs.com/"
+              target="_blank"
+              class="px-3 py-1 rounded-lg drop-shadow-2xl bg-mantle hover:bg-blue"
+              ><i class="fa-brands fa-npm"></i> <span>npm</span></a
+            >
+            <a
+              href="https://www.linux.org/"
+              target="_blank"
+              class="px-3 py-1 rounded-lg drop-shadow-2xl bg-mantle hover:bg-blue"
+              ><i class="fa-brands fa-linux"></i> <span>Linux</span></a
+            >
+            <a
+              href="https://vscodium.com/"
+              target="_blank"
+              class="px-3 py-1 rounded-lg drop-shadow-2xl bg-mantle hover:bg-blue"
+              ><i class="fa-solid fa-file-code"></i> <span>Codium</span></a
+            >
+            <a
+              href="https://www.docker.com/"
+              target="_blank"
+              class="px-3 py-1 rounded-lg drop-shadow-2xl bg-mantle hover:bg-blue"
+              ><i class="fa-brands fa-docker"></i> <span>Docker</span></a
+            >
+          </div>
+        </div>
+        <div id="web-dev" class="lg:w-1/2">2</div>
+      </div>
     </section>
   </body>
   <script>
