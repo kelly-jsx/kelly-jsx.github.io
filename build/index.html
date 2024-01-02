@@ -23,9 +23,9 @@
 
       <nav
         id="nav-mobile"
-        class="hidden absolute flex-col justify-between p-4 m-0 w-3/4 h-full text-4xl text-overlay0 bg-crust/90"
+        class="absolute flex-col justify-between hidden w-3/4 h-full p-4 m-0 text-4xl text-overlay0 bg-crust/90"
       >
-        <div class="flex flex-col gap-4 items-center">
+        <div class="flex flex-col items-center gap-4">
           <h1 class="font-mono font-bold text-blue">Kelly-JSX</h1>
           <button
             id="dark-icon-2"
@@ -51,9 +51,9 @@
 
     <section
       id="hero"
-      class="flex flex-col p-4 w-full h-screen lg:justify-between"
+      class="flex flex-col w-full h-screen p-4 lg:justify-between"
     >
-      <div class="hidden justify-end lg:flex">
+      <div class="justify-end hidden lg:flex">
         <button id="dark-icon" class="dark-icon text-overlay0 hover:text-text">
           <i class="text-4xl fa-solid fa-moon"></i>
         </button>
@@ -63,7 +63,7 @@
       </div>
 
       <div
-        class="flex flex-col gap-3 justify-center items-center self-center my-auto"
+        class="flex flex-col items-center self-center justify-center gap-3 my-auto"
       >
         <h1 class="text-4xl font-extrabold lg:text-6xl">
           Hi, I'm
@@ -111,16 +111,20 @@
 
     <header
       id="header"
-      class="justify-between items-center p-4 text-3xl lg:flex bg-mantle"
+      class="items-center justify-between p-4 text-3xl lg:flex bg-mantle"
     >
-      <div class="flex gap-0">
-        <button id="open-mobile" class="text-overlay0 hover:text-text">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <button id="close-mobile" class="hidden text-overlay0 hover:text-text">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <i class="fa-solid fa-bars"></i>
+      <div class="flex items-center gap-2">
+        <div>
+          <button id="open-mobile" class="text-overlay0 hover:text-text">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <button
+            id="close-mobile"
+            class="hidden text-overlay0 hover:text-text"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
         <div>
           <h1 class="font-mono font-bold text-blue">kelly-jsx</h1>
         </div>
@@ -131,7 +135,7 @@
         <a href="#projects" class="hover:text-blue">Projects</a>
         <a href="#contact" class="hover:text-blue">Contact</a>
       </nav>
-      <div class="hidden gap-6 items-center text-4xl lg:flex text-subtext0">
+      <div class="items-center hidden gap-6 text-4xl lg:flex text-subtext0">
         <div class="">
           <a href="https://github.com/kelly-jsx" class="hover:text-peach">
             <i class="fa-brands fa-github"></i>
@@ -156,7 +160,7 @@
 
     <section
       id="about-me"
-      class="flex flex-col gap-4 justify-center items-center px-4 pt-10 pb-40 md:px-20 lg:px-24 lg:gap-8"
+      class="flex flex-col items-center justify-center gap-4 px-4 pt-10 pb-40 md:px-20 lg:px-24 lg:gap-8"
     >
       <h1 class="text-2xl font-bold lg:text-5xl text-blue">
         Hi, I’m <span class="text-peach">Kelly</span>. Nice to meet
@@ -174,21 +178,21 @@
 
     <section
       id="skills"
-      class="flex flex-col gap-4 justify-center items-center px-4 pt-10 pb-40 bg-mantle md:px-20 lg:px-24 lg:gap-8"
+      class="flex flex-col items-center justify-center gap-4 px-4 pt-10 pb-40 bg-mantle md:px-20 lg:px-24 lg:gap-8"
     >
       <div
-        class="relative -top-16 px-4 py-1 font-mono text-2xl font-bold rounded-lg drop-shadow-lg bg-crust text-blue lg:text-4xl lg:py-4 lg:px-8"
+        class="relative px-4 py-1 font-mono text-2xl font-bold rounded-lg -top-16 drop-shadow-lg bg-crust text-blue lg:text-4xl lg:py-4 lg:px-8"
       >
         <h1>Skills</h1>
       </div>
 
       <div
-        class="flex flex-col gap-16 px-4 py-8 w-full rounded-lg drop-shadow-lg lg:flex-row bg-surface0 lg:w-full"
+        class="flex flex-col w-full gap-16 px-4 py-8 rounded-lg drop-shadow-lg lg:flex-row bg-surface0 lg:w-full"
       >
         <div id="tools" class="flex flex-col text-center md:w-full">
           <div class="flex flex-col items-center mb-3">
             <div
-              class="flex justify-center items-center p-4 w-12 h-12 text-2xl rounded-full text-surface0 bg-blue"
+              class="flex items-center justify-center w-12 h-12 p-4 text-2xl rounded-full text-surface0 bg-blue"
             >
               <i class="fa-solid fa-screwdriver-wrench"></i>
             </div>
@@ -198,7 +202,7 @@
             <a
               href="https://git-scm.com/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
             >
               <i class="fa-brands fa-git-alt"></i> Git
             </a>
@@ -206,37 +210,37 @@
             <a
               href="https://gihub.com/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-github"></i> Github</a
             >
             <a
               href="https://www.zsh.org/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="text-md fa-solid fa-terminal"></i> Zsh</a
             >
             <a
               href="https://www.npmjs.com/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-npm"></i> npm</a
             >
             <a
               href="https://www.linux.org/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-linux"></i> Linux</a
             >
             <a
               href="https://vscodium.com/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-solid fa-file-code"></i> Codium</a
             >
             <a
               href="https://www.docker.com/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-docker"></i> Docker</a
             >
           </div>
@@ -244,7 +248,7 @@
         <div id="web-dev" class="flex flex-col text-center md:w-full">
           <div class="flex flex-col items-center mb-3">
             <div
-              class="flex justify-center items-center p-4 w-12 h-12 text-2xl rounded-full text-surface0 bg-blue"
+              class="flex items-center justify-center w-12 h-12 p-4 text-2xl rounded-full text-surface0 bg-blue"
             >
               <i class="fa-solid fa-code"></i>
             </div>
@@ -254,74 +258,74 @@
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTML"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-html5"></i> HTML</a
             >
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-css3-alt"></i> CSS</a
             >
             <a
               href="https://www.zsh.org/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-square-js"></i> JS</a
             >
             <a
               href="https://jquery.com/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-square-js"></i> jQuery</a
             >
             <a
               href="https://www.typescriptlang.org/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-square-js"></i> TS</a
             >
             <a
               href="https://react.dev/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-react"></i> React</a
             >
             <a
               href="https://redux.js.org/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-react"></i> Redux</a
             >
             <a
               href="https://nextjs.org/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-react"></i> Next.js</a
             >
             <a
               href="https://www.gatsbyjs.com/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-react"></i> Gatsby</a
             >
             <a
               href="https://sass-lang.com/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-sass"></i> Sass</a
             >
             <a
               href="https://getbootstrap.com/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-bootstrap"></i>
               <span class="hidden">Bootstrap</span></a
             >
             <a
               href="https://tailwindcss.com/"
               target="_blank"
-              class="flex gap-2 justify-center items-center px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+              class="flex items-center justify-center gap-2 px-3 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
               ><i class="fa-brands fa-css3-alt"></i> Tailwind</a
             >
           </div>
@@ -331,10 +335,10 @@
 
     <section
       id="projects"
-      class="flex flex-col gap-4 justify-center items-center px-4 pt-10 pb-40 bg-base md:px-20 lg:px-24 lg:gap-8"
+      class="flex flex-col items-center justify-center gap-4 px-4 pt-10 pb-40 bg-base md:px-20 lg:px-24 lg:gap-8"
     >
       <div
-        class="relative -top-16 px-4 py-1 font-mono text-2xl font-bold rounded-lg drop-shadow-lg bg-crust text-blue lg:text-4xl lg:py-4 lg:px-8"
+        class="relative px-4 py-1 font-mono text-2xl font-bold rounded-lg -top-16 drop-shadow-lg bg-crust text-blue lg:text-4xl lg:py-4 lg:px-8"
       >
         <h1>Projects</h1>
       </div>
@@ -350,30 +354,64 @@
               Rock Papers Scissors Game
             </h1>
             <div class="flex gap-2">
-              <div class="px-2 text-sm rounded-full border-2 border-peach">
+              <div class="px-2 text-sm border-2 rounded-full border-peach">
                 <p>React</p>
               </div>
-              <div class="px-2 text-sm rounded-full border-2 border-peach">
+              <div class="px-2 text-sm border-2 rounded-full border-peach">
                 <p>TypeScript</p>
               </div>
             </div>
-            <div class="flex gap-1 self-end mt-6 text-lg">
+            <div class="flex self-end gap-1 mt-6 text-lg">
               <a
                 href="https://jquery.com/"
                 target="_blank"
-                class="flex gap-2 justify-center items-center px-2 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+                class="flex items-center justify-center gap-2 px-2 py-1 text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
                 >LIVE DEMO</a
               >
               <a
                 href="https://jquery.com/"
                 target="_blank"
-                class="flex gap-2 justify-center items-center px-2 py-1 text-2xl text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
+                class="flex items-center justify-center gap-2 px-2 py-1 text-2xl text-center rounded-lg drop-shadow-2xl lg:px-10 bg-mantle hover:bg-blue"
                 ><i class="fa-brands fa-github"></i
               ></a>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <section
+      id="projects"
+      class="flex flex-col items-center justify-center gap-4 px-4 pt-10 pb-40 bg-mantle md:px-20 lg:px-24 lg:gap-8"
+    >
+      <div
+        class="relative px-4 py-1 font-mono text-2xl font-bold rounded-lg -top-16 drop-shadow-lg bg-crust text-blue lg:text-4xl lg:py-4 lg:px-8"
+      >
+        <h1>Contact</h1>
+      </div>
+      <form action="" class="flex flex-col gap-4">
+        <input
+          type="text"
+          placeholder="Name"
+          class="px-4 py-2 rounded-lg bg-crust"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="E-mail"
+          class="px-4 py-2 rounded-lg bg-crust"
+        />
+        <textarea
+          name="message"
+          id=""
+          cols="30"
+          rows="5"
+          placeholder="Message"
+          class="px-4 py-2 rounded-lg bg-crust"
+        ></textarea>
+        <button type="submit" class="px-4 py-2 bg-peach">Submit</button>
+      </form>
     </section>
   </body>
   <script>
@@ -411,7 +449,6 @@
       lightIcon2.classList.remove('hidden')
       darkIcon3.classList.add('hidden')
       lightIcon3.classList.remove('hidden')
-      console.log('dark-mode')
     }
 
     function toggleLightMode() {
@@ -423,7 +460,6 @@
       lightIcon2.classList.add('hidden')
       darkIcon3.classList.remove('hidden')
       lightIcon3.classList.add('hidden')
-      console.log('test')
     }
 
     openMobile.addEventListener('click', openNavMenu)
